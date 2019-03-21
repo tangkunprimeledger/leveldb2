@@ -12,7 +12,7 @@ public class HashTestTest {
 
     @Test
     public void testMain() throws Exception {
-
+        System.out.println("hello");
     }
 
     @Test
