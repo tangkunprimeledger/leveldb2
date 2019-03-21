@@ -110,7 +110,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.6.0</version>
         <configuration>
-          <mainClass>com.tank.MainApp</mainClass>
+          <mainClass>com.tank.HashTest</mainClass>
           <includePluginDependencies>false</includePluginDependencies>
         </configuration>
       </plugin>
