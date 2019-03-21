@@ -80,6 +80,14 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.ethereum</groupId>
+      <artifactId>solcJ-all</artifactId>
+      <version>0.4.24</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/solcJ-all-0.4.24.jar</systemPath>
+    </dependency>
+
   </dependencies>
 
   <build>
