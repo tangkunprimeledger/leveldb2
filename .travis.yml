@@ -11,7 +11,7 @@ addons:
     token:
       secure: 5d42885da3e2789bcd6075b635b6432d909b5898 # encrypted value of your token
 
- script: mvn test -DskipTests=true -Dmaven.test.skip=true -Dmaven.javadoc.skip=true
+ #script: mvn test -DskipTests=true -Dmaven.test.skip=true -Dmaven.javadoc.skip=true
 
 
 #after_success:
