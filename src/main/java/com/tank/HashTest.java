@@ -25,7 +25,16 @@ public class HashTest {
         File file = new File("/data/file/query.txt");
         file.deleteOnExit();
         file.createNewFile();
-        FileOutputStream fos = new FileOutputStream(file);
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(file);
+        }catch (FileNotFoundException ex){
+            ex.printStackTrace();
+        }finally {
+            if (fos != null){
+                fos.close();
+            }
+        }
         for (int i = 0; i < size; i++) {
             //随机生成的字符串在1-300万之间，所以去重后字符串不超过300万
             fos.write((new Random().nextInt(3000000)+"\n").getBytes());
@@ -51,6 +60,8 @@ public class HashTest {
         System.out.println(hashTable.size());
         return hashTable;
     }
+
+
 
     /**
      * 通过java 自带 Collections sort方法排序

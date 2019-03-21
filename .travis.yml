@@ -10,7 +10,7 @@ addons:
     token:
       secure: 5d42885da3e2789bcd6075b635b6432d909b5898 # encrypted value of your token
 after_success:
-  - mvn  sonar:sonar 
+  - mvn  sonar:sonar
   
 
   
