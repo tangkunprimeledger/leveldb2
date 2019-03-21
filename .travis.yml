@@ -15,8 +15,8 @@ script: mvn package -DskipTests=true -Dmaven.test.skip=true -Dmaven.javadoc.skip
  #- mvn test -DskipTests=true -Dmaven.test.skip=true -Dmaven.javadoc.skip=true
 
 
-#after_success:
- # - mvn jacoco:report  sonar:sonar
+after_success:
+  - mvn jacoco:report  sonar:sonar
   
 
   
